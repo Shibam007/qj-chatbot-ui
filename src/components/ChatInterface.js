@@ -222,8 +222,8 @@ const ChatInterface = () => {
           elevation={0}
           sx={{ 
             p: 2,
-            bgcolor: '#1a1a1a',
-            borderBottom: '1px solid #333',
+            bgcolor: '#0a0a0a',
+            // borderBottom: '1px solid #333',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between'
@@ -300,9 +300,12 @@ const ChatInterface = () => {
           sx={{ 
             flex: 1, 
             overflow: 'auto',
-            p: 2,
-            pb: 12,
-            background: 'linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%)'
+            px: 2,
+            pt: 2,
+            pb: 16,
+            background: '#0a0a0a',    //'linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%)',
+            maxWidth: 900,
+            mx: 'auto'
           }}
         >
           {messages.map((message) => (
@@ -409,12 +412,12 @@ const ChatInterface = () => {
             left: 0,
             right: 0,
             p: 2,
-            bgcolor: '#1a1a1a',
-            borderTop: '1px solid #333',
+            bgcolor: '#0a0a0a',
+            // borderTop: '1px solid #333',
             zIndex: 1000
           }}
         >
-          <Box sx={{ maxWidth: '100%', mx: 'auto' }}>
+          <Box sx={{ maxWidth: 900, mx: 'auto' }}>
             <Box sx={{ display: 'flex', gap: 1, alignItems: 'flex-end' }}>
               <TextField
                 ref={inputRef}
